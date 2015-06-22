@@ -1,2 +1,2 @@
-# site-templates
+# Templates for sites.
 templates for sites
