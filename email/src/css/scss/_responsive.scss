@@ -1,0 +1,107 @@
+/* -------------------------------------
+    RESPONSIVE AND MOBILE FRIENDLY STYLES
+------------------------------------- */
+
+table[class=body]{
+  @media only screen and (max-width: $width+40) {
+
+    // Type
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-weight: 600 !important;
+    }
+
+    h1 {
+      font-size: 22px !important;
+    }
+
+    h2 {
+      font-size: 18px !important;
+    }
+
+    h3 {
+      font-size: 16px !important;
+    }
+
+    // Spacing
+    .content,
+    .wrapper {
+      padding: 10px !important;
+    }
+
+    .container {
+      padding: 0 !important;
+      width: 100% !important;
+    }
+
+    // Buttons
+    .btn {
+      width: 100% !important;
+    }
+  }
+}
+a[href^="tel"] {color:#fff;}
+
+@media only screen and (max-width: $width+60) {
+         a[href^="tel"], a[href^="sms"] {
+           text-decoration: none;
+           color: #fff; /* or whatever your want */
+           pointer-events: none;
+           cursor: default;
+         }
+         .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+         text-decoration: default;
+         color: #0a8cce !important;
+         pointer-events: auto;
+         cursor: default;
+         }
+.location {
+  border-bottom:1px solid #fff;
+  &.left {
+    padding: 5px 20px!important;
+  }
+  &.right {
+    padding: 5px 20px!important;
+  }
+}
+         .align-right, .right {text-align: center!important;} 
+         .bodytext{padding: 10px;}
+         table[class=devicewidth] {width: 100%!important;text-align:center!important;}
+         table[class=devicewidthinner] {width: 420px!important;text-align:center!important;}
+         img[class=colimg2] {width: 440px!important;height:220px!important;}
+}
+/*IPHONE STYLES*/
+@media only screen and (max-width: $width - 100) {
+         a[href^="tel"], a[href^="sms"] {
+         text-decoration: none;
+         color: #0a8cce; /* or whatever your want */
+         pointer-events: none;
+         cursor: default;
+         }
+         .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+         text-decoration: default;
+         color: #0a8cce !important; 
+         pointer-events: auto;
+         cursor: default;
+         }
+.location {
+  border-bottom:1px solid #fff;
+  &.left {
+    padding: 5px 20px!important;
+  }
+  &.right {
+    padding: 5px 20px!important;
+  }
+}
+        .align-right, .right {text-align: center!important;}
+         .bodytext{padding: 10px;}
+         table[class=devicewidth] {width: 100%!important;text-align:center!important;}
+         table[class=devicewidthinner] {width: 260px!important;text-align:center!important;}
+         img[class=banner] {width: 100%!important;height:auto!important;}
+         img[class=colimg2] {width: 280px!important;height:140px!important;}
+         td[class=mobile-hide]{display:none!important;}
+         td[class="padding-bottom25"]{padding-bottom:25px!important;}
+        
+}

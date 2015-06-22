@@ -1,0 +1,30 @@
+prehead: "take your business website to the next level!"
+header_one: "Traff1k D1g1tal can take your business website to the next level!"
+below_one: "We are a digital marketing agency, proudly in partnership with Simon Gault and Beau Joie Champagne New Zealand both showcasing their products at The Seriously Good Food Show 2015."
+
+header_two: "Showcase your business and make it unstoppable!"
+below_two: "Traff1k D1g1tal thinks outside the square, transforming your business, engaging your customers and growing your brand! We want to take you to the next level, we want to work with you to create an unstoppable online brand, increasing your profile & profits."
+
+header_three: "Responsive website design & development"
+below_three: "Now more than ever, New Zealanders are connecting in the shopping process via mobile devices. This means that its paramount that your website is fully responsive, so it is can be universally accessed by all mobile devices."
+
+find_out: "To find out more about taking your existing website mobile responsive "
+find_email: "ben@traff1k.co.nz"
+
+header_four: "Traff1k D1g1tal can increase your digital footprint, reduce your marketing spend and ultimately increase your sales!"
+below_four: "Now more than ever, New Zealanders are connecting in the shopping process via mobile devices. This means that its paramount that your website is fully responsive, so it is can be universally accessed by all mobile devices."
+
+case_study: [
+    {text: "Simon Gault Social Media Marketing Case Study", link: "#"},
+    {text: "Beau Joie Social Media Marketing Application Case Study", link: "#"}
+]
+
+twitter_url: "http://twitter.com/leemunroe"
+twitter_handle: "@leemunroe"
+facebook_url: "http://twitter.com/leemunroe"
+facebook_handle: "@leemunroe"
+linkedin_url: "http://twitter.com/leemunroe"
+linkedin_handle: "@leemunroe"
+youtube_url: "http://twitter.com/leemunroe"
+youtube_handle: "@leemunroe"
+unsubscribe_url: "http://giphy.com/gifs/stop-christina-aguilera-ncuegg83kFeBW"

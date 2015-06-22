@@ -1,0 +1,515 @@
+/* -------------------------------------
+    CONFIGURE YOUR VARIABLES
+------------------------------------- */
+/* -------------------------------------
+    GLOBAL RESETS
+------------------------------------- */
+table,
+td,
+div,
+a {
+  box-sizing: border-box;
+}
+table img,
+td img,
+div img,
+a img {
+  border: none;
+}
+
+table[class=full] {
+  width: 100%;
+  clear: both;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+  max-width: 100%;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  height: 100% !important;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  width: 100% !important;
+}
+
+table {
+  -premailer-width: 100%;
+  border-collapse: separate !important;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+table td {
+  vertical-align: top;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+
+.ExternalClass {
+  width: 100%;
+}
+
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}
+
+/* -------------------------------------
+    BODY & CONTAINER
+------------------------------------- */
+body {
+  background-color: #fff;
+}
+
+.body {
+  background-color: #fff;
+  width: 100% !important;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+  display: block;
+  margin: 0 auto !important;
+  /* makes it centered */
+  max-width: 580px;
+  padding: 10px;
+  width: auto !important;
+  width: 580px;
+}
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content {
+  display: block;
+  margin: 0 auto;
+  max-width: 580px;
+  padding: 10px;
+}
+
+/* -------------------------------------
+    HEADER, FOOTER, MAIN
+------------------------------------- */
+.main {
+  background: #fff;
+  border: 1px solid #f2f2f2;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.wrapper {
+  padding: 30px;
+}
+
+.content-block {
+  padding: 0 0 30px;
+}
+
+.header {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.caseStudy, .findOut {
+  color: #00D800;
+}
+.caseStudy a.click, .findOut a.click {
+  color: #00D800;
+  text-decoration: underline;
+}
+
+.findOut {
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #1e1e1e;
+}
+
+.footer {
+  clear: both;
+  width: 100%;
+  color: #fff;
+}
+.footer * {
+  color: #fff;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* -------------------------------------
+    TYPOGRAPHY
+------------------------------------- */
+h1,
+h2,
+h3,
+h4 {
+  color: #000 !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 800;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 38px;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 19px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+p,
+ul,
+ol {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 15px;
+}
+p li,
+ul li,
+ol li {
+  list-style-position: inside;
+  margin-left: 5px;
+}
+
+a {
+  color: #348eda;
+  text-decoration: none;
+}
+
+.title {
+  text-align: center;
+}
+
+.header {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 30px;
+  color: #333333;
+  text-align: center;
+  line-height: 23px;
+  box-sizing: border-box;
+  vertical-align: top;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+
+.bodytext {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 16px;
+  color: #1e1e1e;
+  text-align: center;
+  line-height: 23px;
+}
+
+.footer {
+  font-family: Helvetica, arial, sans-serif;
+}
+
+.caseStudy, .findOut {
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 12px;
+}
+
+/* -------------------------------------
+    BUTTONS
+------------------------------------- */
+.btn {
+  margin-bottom: 15px;
+  width: auto;
+  -premailer-width: auto;
+}
+.btn td {
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+.btn a {
+  background-color: #fff;
+  border: solid 1px #348eda;
+  border-radius: 5px;
+  color: #348eda;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  padding: 12px 25px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.btn-primary td {
+  background-color: #348eda;
+}
+.btn-primary a {
+  background-color: #348eda;
+  border-color: #348eda;
+  color: #fff;
+}
+
+/* -------------------------------------
+    OTHER STYLES THAT MIGHT BE USEFUL
+------------------------------------- */
+.last {
+  margin-bottom: 0;
+}
+
+.first {
+  margin-top: 0;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.mt0 {
+  margin-top: 0;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+.ExternalClass {
+  width: 100%;
+}
+
+.location {
+  border-bottom: 1px solid #fff;
+}
+.location.left {
+  padding: 0 20px 5px 0;
+}
+.location.right {
+  padding: 0 0 5px 20px;
+}
+
+.spacing {
+  font-size: 1px;
+  line-height: 1px;
+  mso-line-height-rule: exactly;
+}
+
+/* Force Hotmail to display emails at full width */
+.ExternalClass, .ExternalClass p, .ExternalClass span,
+.ExternalClass font, .ExternalClass td, .ExternalClass div {
+  line-height: 100%;
+}
+
+/* Force Hotmail to display normal line spacing.*/
+#backgroundTable {
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+  line-height: 100% !important;
+}
+
+.image_fix {
+  display: block;
+}
+
+.preheader {
+  color: transparent;
+  display: none;
+  height: 0;
+  max-height: 0;
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  mso-hide: all;
+  visibility: hidden;
+  width: 0;
+}
+
+/* -------------------------------------
+    RESPONSIVE AND MOBILE FRIENDLY STYLES
+------------------------------------- */
+@media only screen and (max-width: 620px) {
+  table[class=body] h1,
+  table[class=body] h2,
+  table[class=body] h3,
+  table[class=body] h4 {
+    font-weight: 600 !important;
+  }
+  table[class=body] h1 {
+    font-size: 22px !important;
+  }
+  table[class=body] h2 {
+    font-size: 18px !important;
+  }
+  table[class=body] h3 {
+    font-size: 16px !important;
+  }
+  table[class=body] .content,
+  table[class=body] .wrapper {
+    padding: 10px !important;
+  }
+  table[class=body] .container {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  table[class=body] .btn {
+    width: 100% !important;
+  }
+}
+
+a[href^="tel"] {
+  color: #fff;
+}
+
+@media only screen and (max-width: 640px) {
+  a[href^="tel"], a[href^="sms"] {
+    text-decoration: none;
+    color: #fff;
+    /* or whatever your want */
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+    text-decoration: default;
+    color: #0a8cce !important;
+    pointer-events: auto;
+    cursor: default;
+  }
+
+  .location {
+    border-bottom: 1px solid #fff;
+  }
+  .location.left {
+    padding: 5px 20px !important;
+  }
+  .location.right {
+    padding: 5px 20px !important;
+  }
+
+  .align-right, .right {
+    text-align: center !important;
+  }
+
+  .bodytext {
+    padding: 10px;
+  }
+
+  table[class=devicewidth] {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  table[class=devicewidthinner] {
+    width: 420px !important;
+    text-align: center !important;
+  }
+
+  img[class=colimg2] {
+    width: 440px !important;
+    height: 220px !important;
+  }
+}
+/*IPHONE STYLES*/
+@media only screen and (max-width: 480px) {
+  a[href^="tel"], a[href^="sms"] {
+    text-decoration: none;
+    color: #0a8cce;
+    /* or whatever your want */
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+    text-decoration: default;
+    color: #0a8cce !important;
+    pointer-events: auto;
+    cursor: default;
+  }
+
+  .location {
+    border-bottom: 1px solid #fff;
+  }
+  .location.left {
+    padding: 5px 20px !important;
+  }
+  .location.right {
+    padding: 5px 20px !important;
+  }
+
+  .align-right, .right {
+    text-align: center !important;
+  }
+
+  .bodytext {
+    padding: 10px;
+  }
+
+  table[class=devicewidth] {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  table[class=devicewidthinner] {
+    width: 260px !important;
+    text-align: center !important;
+  }
+
+  img[class=banner] {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  img[class=colimg2] {
+    width: 280px !important;
+    height: 140px !important;
+  }
+
+  td[class=mobile-hide] {
+    display: none !important;
+  }
+
+  td[class="padding-bottom25"] {
+    padding-bottom: 25px !important;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

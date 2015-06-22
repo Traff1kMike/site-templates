@@ -1,0 +1,82 @@
+/* -------------------------------------
+    TYPOGRAPHY
+------------------------------------- */
+
+h1,
+h2,
+h3,
+h4 {
+  color: #000 !important;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 800;
+  line-height: 1.4;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 38px;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+h2 {
+  font-size: 19px;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 14px;
+  font-weight:500;
+}
+
+p,
+ul,
+ol {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 15px;
+
+  li {
+    list-style-position: inside;
+    margin-left: 5px;
+  }
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+}
+.title {
+  text-align:center;
+}
+.news {}
+.header {
+  font-family: Helvetica, arial, sans-serif; 
+  font-size: 30px; 
+  color: #333333; 
+  text-align: center; 
+  line-height: 23px; 
+  box-sizing: border-box; 
+  vertical-align: top; 
+  mso-table-lspace: 0pt; 
+  mso-table-rspace: 0pt;
+}
+.bodytext {
+  font-family: Helvetica, arial, sans-serif; 
+  font-size: 16px; 
+  color: #1e1e1e; 
+  text-align:center; 
+  line-height: 23px;
+}
+.footer {
+  font-family: Helvetica, arial, sans-serif;
+}
+.caseStudy, .findOut {
+   font-family: Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size:12px;
+}

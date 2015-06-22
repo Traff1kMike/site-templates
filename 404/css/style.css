@@ -1,0 +1,260 @@
+/*
+ * Globals
+ */
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@font-face {
+  font-family: 'Mohave';
+  src: url('fonts/Mohave.eot?') format('eot'), url('fonts/Mohave.woff') format('woff'), url('fonts/Mohave.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Mohave bold';
+  src: url('fonts/Mohave-Bold.eot?') format('eot'), url('fonts/Mohave-Bold.woff') format('woff'), url('fonts/Mohave-Bold.ttf') format('truetype');
+}
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin:0;
+  padding: 0;
+  background: #e3e3e3;
+  color:#383838;
+  font-family: 'Lato', 'Helvetica', arial, serif;
+  font-weight: 300;
+}
+.green {
+  transform:translate(0,-800);
+}
+.rotate {
+    -webkit-animation: rotation 10s infinite linear;
+  -moz-animation: rotation 10s infinite linear;
+  -o-animation: rotation 10s infinite linear;
+  animation: rotation 10s infinite linear;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+}
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}
+}
+@-moz-keyframes rotation {
+    from {-moz-transform: rotate(0deg);}
+    to   {-moz-transform: rotate(359deg);}
+}
+@-o-keyframes rotation {
+    from {-o-transform: rotate(0deg);}
+    to   {-o-transform: rotate(359deg);}
+}
+@keyframes rotation {
+    from {transform: rotate(0deg);}
+    to   {transform: rotate(359deg);}
+}
+
+
+
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.disclaimer {
+   padding-right: 20px;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.button-green a {
+  background-color: #00d800;
+  width: 68%;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  min-width: 110px;
+  padding: 15px;
+  text-align: center;
+}
+/*
+ * Base structure
+ */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+
+/* header */
+.header {
+  margin-bottom: 65px;
+  border-bottom: 1px solid #383838;
+}
+.header-wrap {
+  border-left: 1px solid #383838;
+} 
+.header > div:first-child {text-align: center}
+
+.header-wrap {display:table; height: 140px; position: relative; overflow: hidden; }
+.header-text {*position: absolute; top: 50%; display: table-cell; vertical-align: middle;  font-size: 16px;}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.button-green {
+  text-align: right;
+}
+
+
+/*
+ * Typography
+ */
+h1 {
+  font-family: 'Mohave', 'Helvetica', arial, serif;
+  font-size: 100px;
+  line-height: 120px;
+  margin:10px 0;
+}
+h2 {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-size: 64px;
+  color: #fff;
+  font-weight: 100;
+  font-family: 'Mohave', 'Helvetica', arial, serif;
+  line-height: 100%;
+}
+strong {
+  font-family: 'Lato', 'Helvetica', arial, serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 17px;
+}
+.text {
+  line-height: 22px;
+  width: 100%;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #fff;
+}
+
+
+
+
+/* social */
+
+.social {
+  font-size: 20px;
+  line-height: 40px;
+}
+.fa {
+  padding: 5px;
+}
+/*
+ * Footer
+ */
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background:#00d800;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+.footer .container {
+  padding: 20px 0 10px 0;
+}
+.footer img {padding-left: 5px;}
+/*
+ * Affix and center
+ */
+@media (max-width: 991px) {
+  .header {
+    border-bottom: none; 
+    margin-bottom:0;
+  }
+  .header .col-md-8 {
+    border-right: none;
+  } 
+  .social {margin-bottom: 50px;}
+
+}
+@media (min-width: 768px) {
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+
+  
+  .footer {}
+}
+
+@media (min-width: 992px) {
+  .text {
+    font-size:12px;
+  }
+}
+@media (min-width: 1200px) {
+  .text {
+    font-size:14px;
+  }
+}
+@media (max-width: 1199px) {
+  .header-wrap, .header {
+    border: none;
+    text-align:center;
+  }
+  h1 {text-align:center;}
+  h2 {
+    font-size:50px;
+
+  }
+  .footer{
+    position: relative;
+    margin-top: 40px;
+  }
+}
+
+
+/* accordian */
+.ui-collapsible-heading-status, .mob-info,.ui-loader {display: none;}
+
+@media (max-width: 767px) {
+  .header h1 {text-align:center;}
+}
